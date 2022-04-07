@@ -8,3 +8,16 @@ red - #ee5253
 
 */
 
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.box #Cookpot {
+  height: 150px;
+  width: 150px;
+}
