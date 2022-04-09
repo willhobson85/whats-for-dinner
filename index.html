@@ -1,26 +1,35 @@
 <html>
   <head>
+    <title>What's For Dinner</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h2>What's for dinner?</h2>
+      <h1>What's for Dinner?</h1>
+      <button class="add-recipe" type="button" name="button">ADD A RECIPE</button>
     </header>
-    <section>
-      <section class="box">
-        <h1>What are you looking for?</h1>
-        <br>
-        <input type="radio" id="dishType1" name="side" value="side">
-        <label for="dishType1">Side</label>
-        <input type="radio" id="dishType2" name="mainDish" value="mainDish">
-        <label for="dishType2">Main Dish</label>
-        <input type="radio" id="dishType3" name="dessert" value="dessert">
-        <label for="dishType3">Dessert</label>
+    <div class ="content-boxes">
+      <section class="container1">
+        <h2>What are you looking for?</h2>
+        <form>
+          <input type="radio" name="radio-btn" value="side">
+          <label for="radio-btn">Side</label> <br> <br>              <input type="radio" name="radio-btn" value="mainDish">
+          <label for="radio-btn">Main Dish</label> <br> <br>
+          <input type="radio" name="radio-btn" value="dessert">
+          <label for="radio-btn">Dessert</label> <br> <br>
+          <input type="radio" name="radio-btn" value="entireMeal">
+          <label for="radio-btn">Entire Meal</label> <br> <br>
+          <button class="letsCook" type="button" name="button">LET'S COOK!</button>
+        </form>
       </section>
-      <section class="box" id="cookpot">
-        <img src="assets/burger-friends.jpg">
-    </section>
+      <section class="container2">
+        <form>
+          <img class="cookpot" src="assets/cookpot.svg"> <br>
+          <button class="clear-button" type="button" name="button">CLEAR</button>
+        </form>
+      </section>
+    </div>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
