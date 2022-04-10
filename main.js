@@ -1,23 +1,11 @@
+//variables
 var addRecipeBtn = document.querySelector(".add-recipe");
 var letsCookBtn = document.querySelector(".letsCook");
 var clearBtn = document.querySelector(".clear-button");
-
-
-
-function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length);
-}
-
-function getDish() {
-
-}
-
-
-
-
-
-
-
+var cookpotBox = document.querySelector(".container2");
+var recipeBox = document.querySelector(".container3");
+var typeOfFood = document.getElementsByName("radio-btn");
+var whatToCook = document.querySelector("p");
 
 var sides = [
 "Miso Glazed Carrots",
@@ -68,3 +56,49 @@ var desserts = [
 "Croissants",
 "Eclairs"
 ];
+
+//event listeners
+letsCookBtn.addEventListener("click", getDish);
+clearBtn.addEventListener("click", clearDish);
+
+//functions
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
+function getRandomFood() {
+  for (var i = 0; i < typeOfFood.length; i++) {
+    if (typeOfFood[i].checked); {
+      typeOfFood[i].value;
+    }
+  }
+}
+
+function getDish() {
+  var output = '';
+  var selected = document.querySelector('input[type="radio"]:checked');
+  var randomDish = getRandomIndex(selected.value);
+  cookpotBox.classList.add('hidden');
+  recipeBox.classList.remove('hidden');
+  switch(selected.value) {
+    case 'side':
+      output = sides[randomDish];
+      break;
+    case 'mainDish':
+      output = mains[randomDish];
+      break;
+    case 'dessert':
+      output = desserts[randomDish];
+      break;
+    case 'entireMeal':
+      output = `${mains[randomDish]}, with a side of ${sides[randomDish]}, and ${desserts[randomDish]} for dessert!`;
+      break;
+}
+
+  whatToCook.innerText = output ;
+}
+
+function clearDish() {
+  cookpotBox.classList.remove('hidden');
+  recipeBox.classList.add('hidden');
+}
