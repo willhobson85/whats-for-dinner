@@ -95,6 +95,7 @@ function getDish() {
       output = `${mains[randomDish]}, with a side of ${sides[randomDish]}, and ${desserts[randomDish]} for dessert!`;
       break;
     }
+  whatToCook.innerText = output;
 }
 
 function clearDish() {
