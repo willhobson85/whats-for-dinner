@@ -13,7 +13,7 @@
 
 ## Introduction
 
- - Monday got you down? Need a mid-week boost? Want to send something funny to a friend? Make a motivational poster for any situation! You can use the randomizer to create a poster with a pre-made Image, Title, and Quote, or you can build your own. The possibilities are endless!
+ - Don't know what to cook for dinner? Well, go no further! This handy little site will help make the decision for you, with a selection of 10 sides, 13 main dishes, and 18 desserts! You can choose from one of the options, or let it create an entire meal for you!
 
 ## Technologies
 
