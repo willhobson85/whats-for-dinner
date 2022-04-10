@@ -13,22 +13,26 @@
       <section class="container1">
         <h2>What are you looking for?</h2>
         <form>
-          <input type="radio" name="radio-btn" value="side">
-          <label for="radio-btn">Side</label> <br> <br>              <input type="radio" name="radio-btn" value="mainDish">
+          <input type="radio" name="radio-btn" id="side" value="side">
+          <label for="radio-btn">Side</label> <br> <br>
+          <input type="radio" name="radio-btn" id="mainDish" value="mainDish">
           <label for="radio-btn">Main Dish</label> <br> <br>
-          <input type="radio" name="radio-btn" value="dessert">
+          <input type="radio" name="radio-btn" id="dessert" value="dessert">
           <label for="radio-btn">Dessert</label> <br> <br>
-          <input type="radio" name="radio-btn" value="entireMeal">
+          <input type="radio" name="radio-btn" id="entireMeal" value="entireMeal">
           <label for="radio-btn">Entire Meal</label> <br> <br>
           <button class="letsCook" type="button" name="button">LET'S COOK!</button>
         </form>
       </section>
       <section class="container2">
         <form>
-          <img class="cookpot" src="assets/cookpot.svg"> <br>
-          <button class="clear-button" type="button" name="button">CLEAR</button>
+          <img class="cookpot" src="assets/cookpot.svg">
         </form>
       </section>
+      <section class="container3 hidden">
+        <h3>You should make:</h3>
+        <p>Placeholder text</p>
+        <button class="clear-button" type="button" name="button">CLEAR</button>
     </div>
   </body>
   <script type="text/javascript" src="main.js"></script>
