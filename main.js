@@ -60,6 +60,7 @@ var desserts = [
 //event listeners
 letsCookBtn.addEventListener("click", getDish);
 clearBtn.addEventListener("click", clearDish);
+addRecipeBtn.addEventListener("click", underConstruction)
 
 //functions
 function getRandomIndex(array) {
@@ -93,12 +94,14 @@ function getDish() {
     case 'entireMeal':
       output = `${mains[randomDish]}, with a side of ${sides[randomDish]}, and ${desserts[randomDish]} for dessert!`;
       break;
-}
-
-  whatToCook.innerText = output ;
+    }
 }
 
 function clearDish() {
   cookpotBox.classList.remove('hidden');
   recipeBox.classList.add('hidden');
+}
+
+function underConstruction() {
+  window.alert("The function is still under construction!");
 }
