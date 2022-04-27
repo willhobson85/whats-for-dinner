@@ -43,7 +43,7 @@
   - Project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-1/dinner.html)
 
 ## Published link
-  - You can view the website [here](https://github.com/willhobson85/whats-for-dinner.git)
+  - You can view the website [here](https://willhobson85.github.io/whats-for-dinner/)
 
 ## What I Learned
   - The biggest tool that I learned about on this project was the Switch statement in Javascript. I had initially thought that I would use a few if/else statements with the radio buttons, but a classmate said that I should look into this. It was very useful and saved a lot of time from having to go through all the different dishes.
